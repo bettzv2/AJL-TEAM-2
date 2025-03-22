@@ -101,7 +101,7 @@ Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi
 1. What steps did you take to address [model fairness](https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf)? (e.g., leveraging data augmentation techniques to account for training dataset imbalances; using a validation set to assess model performance across different skin tones)
 2. What broader impact could your work have?
 
-All images given in the dataset were used in the training, so no data was excluded based on skin condition, skin color, and other factors. Techniques such as data augmentation and SMOTE were also used to account for imbalances.
+All images given in the dataset were used in the training, so no data in this dataset was excluded based on skin condition, skin color, and other factors. Techniques such as data augmentation and SMOTE were also used to account for imbalances. This work can have a broader impact by also being trained for more skin conditions than just what was in this dataset, such as exxtremely rare skin conditions or skin conditions that look very similar to each other and need further diagnosis from other factors.
 
 ---
 
