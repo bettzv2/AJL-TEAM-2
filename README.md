@@ -113,7 +113,7 @@ All images given in the dataset were used in the training, so no data was exclud
 * What would you do differently with more time/resources?
 * What additional datasets or techniques would you explore?
 
-With more time and resources, we would have tried 
+With more time and resources, we would have tried other data techniques to keep seeing if we could improve the accuracy score.
 
 ---
 
