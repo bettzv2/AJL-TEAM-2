@@ -113,7 +113,7 @@ All images given in the dataset were used in the training, so no data in this da
 * What would you do differently with more time/resources?
 * What additional datasets or techniques would you explore?
 
-With more time and resources, we would have tried other data techniques to keep seeing if we could improve the accuracy score.
+With ResNet in particular, the accuracy scores weren't as high as the ResNet value got larger, so it limited usage of that technique. Additionally, there were some issues with getting specific ResNet values to work based on importing the tools, which also limited which ResNet values could be used for testing. With more time and resources, we would have tried other data techniques to keep seeing if we could improve the accuracy score.
 
 ---
 
