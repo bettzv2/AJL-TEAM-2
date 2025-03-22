@@ -6,10 +6,7 @@
 ### **👥 Team Members**
 
 | Name | GitHub Handle | Contribution |
-| ----- | ----- | ----- |
-| Alice Doe | @AliceDoe | Built CNN model, performed data augmentation |
-| Mel Ramakrishnan | @MelRam | Led EDA, visualized dataset distributions, handled missing data |
-| Charlie Nguyen | @CharlieN | Implemented explainability tools |
+| Alexia Ventura | @alexiaventura | Tested ResNet, contributed to README file |
 
 ---
 
