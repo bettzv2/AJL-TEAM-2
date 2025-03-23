@@ -4,12 +4,7 @@
 
 
 ### **👥 Team Members**
-
-| Name | GitHub Handle | Contribution |
-| ----- | ----- | ----- |
-| Alice Doe | @AliceDoe | Built CNN model, performed data augmentation |
-| Mel Ramakrishnan | @MelRam | Led EDA, visualized dataset distributions, handled missing data |
-| Charlie Nguyen | @CharlieN | Implemented explainability tools |
+| Alexia Ventura | @alexiaventura | Tested ResNet, contributed to README file |
 
 ---
 
@@ -106,6 +101,8 @@ Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi
 1. What steps did you take to address [model fairness](https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf)? (e.g., leveraging data augmentation techniques to account for training dataset imbalances; using a validation set to assess model performance across different skin tones)
 2. What broader impact could your work have?
 
+All images given in the dataset were used in the training, so no data in this dataset was excluded based on skin condition, skin color, and other factors. Techniques such as data augmentation and SMOTE were also used to account for imbalances. This work can have a broader impact by also being trained for more skin conditions than just what was in this dataset, such as exxtremely rare skin conditions or skin conditions that look very similar to each other and need further diagnosis from other factors.
+
 ---
 
 ## **🚀 Next Steps & Future Improvements**
@@ -115,6 +112,8 @@ Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi
 * What are some of the limitations of your model?
 * What would you do differently with more time/resources?
 * What additional datasets or techniques would you explore?
+
+With ResNet in particular, the accuracy scores weren't as high as the ResNet value got larger, so it limited usage of that technique. Additionally, there were some issues with getting specific ResNet values to work based on importing the tools, which also limited which ResNet values could be used for testing. With more time and resources, we would have tried other data techniques to keep seeing if we could improve the accuracy score.
 
 ---
 
