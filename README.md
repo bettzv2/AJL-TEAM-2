@@ -4,6 +4,7 @@
 
 
 ### **👥 Team Members**
+| Ivette Adame-Castro | @bettzv2 | Began data loading, trained ResNet50, contributed to README file |
 | Alexia Ventura | @alexiaventura | Tested ResNet, contributed to README file |
 
 ---
@@ -18,7 +19,6 @@
 * Implemented \[data preprocessing method\] to optimize results within compute constraints
 
 🔗 [Equitable AI for Dermatology | Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
-🔗 [WiDS Datathon 2025 | Kaggle Competition Page](https://www.kaggle.com/competitions/widsdatathon2025/overview)
 
 ---
 
@@ -87,11 +87,6 @@
 
 **Answer the relevant questions below based on your competition:**
 
-**WiDS challenge:**
-
-1. What brain activity patterns are associated with ADHD; are they different between males and females, and, if so, how?
-2. How could your work help contribute to ADHD research and/or clinical care?
-
 **AJL challenge:**
 
 As Dr. Randi mentioned in her challenge overview, “Through poetry, art, and storytelling, you can reach others who might not know enough to understand what’s happening with the machine learning model or data visualizations, but might still be heavily impacted by this kind of work.”
@@ -99,7 +94,10 @@ As you answer the questions below, consider using not only text, but also illust
 Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi6TlPviC3q/view) from the Algorithmic Justice League for inspiration!
 
 1. What steps did you take to address [model fairness](https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf)? (e.g., leveraging data augmentation techniques to account for training dataset imbalances; using a validation set to assess model performance across different skin tones)
-2. What broader impact could your work have?
+   - Balanced the Dataset – We used data augmentation techniques (such as rotation, flipping, and color normalization) to increase representation for underrepresented skin tones.
+3. What broader impact could your work have?
+   - Improved Healthcare Accessibility – By ensuring diverse representation, the model can help dermatologists provide more accurate diagnoses across all skin tones.
+   - 
 
 All images given in the dataset were used in the training, so no data in this dataset was excluded based on skin condition, skin color, and other factors. Techniques such as data augmentation and SMOTE were also used to account for imbalances. This work can have a broader impact by also being trained for more skin conditions than just what was in this dataset, such as exxtremely rare skin conditions or skin conditions that look very similar to each other and need further diagnosis from other factors.
 
