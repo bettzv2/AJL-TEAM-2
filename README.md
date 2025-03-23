@@ -5,6 +5,7 @@
 
 ### **👥 Team Members**
 | Ivette Adame-Castro | @bettzv2 | Began data loading, trained ResNet50, contributed to README file |
+
 | Alexia Ventura | @alexiaventura | Tested ResNet, contributed to README file |
 
 ---
