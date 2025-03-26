@@ -15,8 +15,7 @@
 **Example:**
 
 * Built a \[insert model type\] using \[techniques used\] to solve \[Kaggle competition task\]
-* Achieved an F1 score of \[insert score\] and a ranking of \[insert ranking out of participating teams\] on the final Kaggle Leaderboard
-* Used \[explainability tool\] to interpret model decisions
+* Achieved an F1 score of 0.64623 and a ranking of 12/75 on the final Kaggle Leaderboard
 * Implemented \[data preprocessing method\] to optimize results within compute constraints
 
 🔗 [Equitable AI for Dermatology | Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
