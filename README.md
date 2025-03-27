@@ -57,7 +57,7 @@
 * Data exploration and preprocessing approaches
 * Challenges and assumptions when working with the dataset(s)
 
-We used the [HAM 1000](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000) dataset to pre-train the model on a smaller sample size and prepare the model for a more complex dataset. Then we used the given [AJL dataset](https://www.kaggle.com/competitions/bttai-ajl-2025/data) to train the model.
+We used the [HAM 1000](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000) dataset to pre-train the model on a smaller sample size and prepare the model for a more complex dataset. Then we used the given [AJL dataset](https://www.kaggle.com/competitions/bttai-ajl-2025/data) to train the model. We also used some data preparation techniques such as data augmentation and SMOTE to account for class imbalances. The biggest challenge that we faced was with the class imbalances: there were more skin cancers detected on lighter skin tones than on darker skin tones, so we had to use more than just SMOTE to fix that issue. That came in the form of pre-training the model with the smaller HAM 1000 dataset which has similar characteristics. 
 
 **Potential visualizations to include:**
 
@@ -72,6 +72,8 @@ We used the [HAM 1000](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-
 * Model(s) used (e.g., CNN with transfer learning, regression models)
 * Feature selection and Hyperparameter tuning strategies
 * Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
+
+
 
 ---
 
@@ -119,6 +121,7 @@ All images given in the dataset were used in the training, so no data in this da
 * What additional datasets or techniques would you explore?
 
 With ResNet in particular, the accuracy scores weren't as high as the ResNet value got larger, so it limited usage of that technique. Additionally, there were some issues with getting specific ResNet values to work based on importing the tools, which also limited which ResNet values could be used for testing. With more time and resources, we would have tried other data techniques to keep seeing if we could improve the accuracy score, or used a combination of models as filters to get a better result.
+
 ---
 
 ## **📄 References & Additional Resources**
