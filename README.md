@@ -10,13 +10,15 @@
 
 | Abdulaziz Khader | @aokhader | Researched data-upscaling, Trained ResNet101, contributed to README file |
 
+| Ava Gonick | (Fill in GitHub name) | (Top 3 tasks you completed) |
+
 ---
 
 ## **🎯 Project Highlights**
 
 **Example:**
 
-* Built a \[insert model type\] using \[techniques used\] to solve \[Kaggle competition task\]
+* Built a \[insert model type\] using \[techniques used\] to solve the skin cancer detection problem for various skin types.
 * Achieved an F1 score of 0.64623 and a ranking of 12/75 on the final Kaggle Leaderboard
 * Implemented \[data preprocessing method\] to optimize results within compute constraints
 
@@ -113,8 +115,7 @@ All images given in the dataset were used in the training, so no data in this da
 * What would you do differently with more time/resources?
 * What additional datasets or techniques would you explore?
 
-With ResNet in particular, the accuracy scores weren't as high as the ResNet value got larger, so it limited usage of that technique. Additionally, there were some issues with getting specific ResNet values to work based on importing the tools, which also limited which ResNet values could be used for testing. With more time and resources, we would have tried other data techniques to keep seeing if we could improve the accuracy score.
-
+With ResNet in particular, the accuracy scores weren't as high as the ResNet value got larger, so it limited usage of that technique. Additionally, there were some issues with getting specific ResNet values to work based on importing the tools, which also limited which ResNet values could be used for testing. With more time and resources, we would have tried other data techniques to keep seeing if we could improve the accuracy score, or used a combination of models as filters to get a better result.
 ---
 
 ## **📄 References & Additional Resources**
