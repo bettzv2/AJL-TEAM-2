@@ -8,6 +8,8 @@
 
 | Alexia Ventura | @alexiaventura | Tested ResNet, contributed to README file |
 
+| Abdulaziz Khader| @aokhader | Researched data-upscaling, Trained ResNet101, contributed to README file |
+
 ---
 
 ## **🎯 Project Highlights**
