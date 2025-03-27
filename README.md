@@ -36,6 +36,11 @@
 * How to access the dataset(s)
 * How to run the notebook or scripts
 
+- To clone the repository you can use your preferred method of cloning. For example, if you wanted to clone the repo using the the HTTPS link, run:
+  ```
+  ```
+- Once you clone the repo to your local machine, you have to add the datasets to your file system.
+
 ---
 
 ## **🏗️ Project Overview**
