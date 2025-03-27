@@ -57,7 +57,7 @@
 * Challenges and assumptions when working with the dataset(s)
 
 - We used the HAM 1000 dataset to pre-train the model on a smaller sample size: ![HAM 1000](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000)
-- Then we used the main dataset to train the model: ![AJL dataset]()
+- Then we used the main dataset to train the model: ![AJL dataset](https://www.kaggle.com/competitions/bttai-ajl-2025/data)
 
 **Potential visualizations to include:**
 
