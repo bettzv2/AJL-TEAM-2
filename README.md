@@ -18,9 +18,9 @@
 
 **Example:**
 
-* Built a \[insert model type\] using \[techniques used\] to solve the skin cancer detection problem for various skin types.
+* Built a Visual Transformer by pretraining it on sample data to accurately detect skin cancers on different parts of the body for various skin types.
 * Achieved an F1 score of 0.64623 and a ranking of 12/75 on the final Kaggle Leaderboard
-* Implemented \[data preprocessing method\] to optimize results within compute constraints
+* Implemented a learning rate scheduler and weight decay to optimize results within compute constraints
 
 🔗 [Equitable AI for Dermatology | Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
 
@@ -55,6 +55,9 @@
 * The dataset(s) used (i.e., the data provided in Kaggle \+ any additional sources)
 * Data exploration and preprocessing approaches
 * Challenges and assumptions when working with the dataset(s)
+
+- We used the HAM 1000 dataset to pre-train the model on a smaller sample size: ![HAM 1000](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000)
+- Then we used the main dataset to train the model: ![AJL dataset]()
 
 **Potential visualizations to include:**
 
