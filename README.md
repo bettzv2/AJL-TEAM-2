@@ -38,8 +38,9 @@
 
 - To clone the repository you can use your preferred method of cloning. For example, if you wanted to clone the repo using the the HTTPS link, run:
   ```
+  git clone https://github.com/bettzv2/AJL-TEAM-2.git
   ```
-- Once you clone the repo to your local machine, you have to add the datasets to your file system.
+- Once you clone the repo to your local machine, you have to add the datasets to your file system
 
 ---
 
