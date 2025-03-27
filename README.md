@@ -46,6 +46,7 @@
 * The objective of the challenge
 * The real-world significance of the problem and the potential impact of your work
 
+
 ---
 
 ## **📊 Data Exploration**
@@ -56,8 +57,7 @@
 * Data exploration and preprocessing approaches
 * Challenges and assumptions when working with the dataset(s)
 
-- We used the HAM 1000 dataset to pre-train the model on a smaller sample size: ![HAM 1000](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000)
-- Then we used the main dataset to train the model: ![AJL dataset](https://www.kaggle.com/competitions/bttai-ajl-2025/data)
+We used the ![HAM 1000](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000) dataset to pre-train the model on a smaller sample size and prepare the model for a more complex dataset. Then we used the given ![AJL dataset](https://www.kaggle.com/competitions/bttai-ajl-2025/data) to train the model.
 
 **Potential visualizations to include:**
 
