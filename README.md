@@ -36,11 +36,13 @@
 * How to access the dataset(s)
 * How to run the notebook or scripts
 
+- To run the notebook, you have to either set it up on your local machine or use a cloud-based environment such as Google Colab, which has the benefit of no setup except getting the notebook.
 - To clone the repository you can use your preferred method of cloning. For example, if you wanted to clone the repo using the the HTTPS link, run:
   ```
   git clone https://github.com/bettzv2/AJL-TEAM-2.git
   ```
-- Once you clone the repo to your local machine, you have to add the datasets to your file system
+- Once you clone the repo to your local machine, you have to add the HAM 1000 and AJL datasets to your file system.
+- After that, 
 
 ---
 
