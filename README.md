@@ -59,9 +59,8 @@ To run on your local machine:
 
   hampath = os.path.join(filepath, hamdataset)
   ajlpath = os.path.join(filepath, ajldataset)
-
   ```
-- After that, 
+  - Now just change the paths when loading the dataset into *hampath* and *ajlpath*.
 
 ---
 
