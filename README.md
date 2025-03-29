@@ -12,6 +12,8 @@
 
 | Ava Gonick | @avagonick | researched pretraining datasets, performed data augmentation, trained ResNet50, trained Vit16, contributed to README file |
 
+| Chris Taguba | @ectaguba | Researched models and dataset balancing, conducted data exploration, began training ViT, contributed to README file |
+
 ---
 
 ## **🎯 Project Highlights**
@@ -61,19 +63,65 @@ The Kaggle competition aimed to challenge us to solve real-world problems using 
 
 ---
 
-## **📊 Data Exploration**
+## 📊 Data Exploration
 
-**Describe:**
+### Datasets Used
+- **[HAM 1000](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000) Dataset:**  
+  Used to pre-train the model on a similar sample size.
 
-* The dataset(s) used (i.e., the data provided in Kaggle \+ any additional sources)
-* Data exploration and preprocessing approaches
-* Challenges and assumptions when working with the dataset(s)
+- **[AJL dataset](https://www.kaggle.com/competitions/bttai-ajl-2025/data) Dataset:**  
+  The final dataset for model submissions.
 
-We used the [HAM 1000](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000) dataset to pre-train the model on a smaller sample size and prepare the model for a more complex dataset. Then we used the given [AJL dataset](https://www.kaggle.com/competitions/bttai-ajl-2025/data) to train the model. We also used some data preparation techniques such as data augmentation and SMOTE to account for class imbalances. The biggest challenge that we faced was with the class imbalances: there were more skin cancers detected on lighter skin tones than on darker skin tones, so we had to use more than just SMOTE to fix that issue. That came in the form of pre-training the model with the smaller HAM 1000 dataset which has similar characteristics. 
+### Data Exploration & Preprocessing
+We conducted a concise analysis of key demographic and lesion attributes:
 
-**Potential visualizations to include:**
+- **Demographics:**  
+  Analyzed age, sex, and skin tone distributions. Preprocessing involved renaming columns and mapping abbreviated diagnostic labels (e.g., `akiec`, `bcc`) to full names.
 
-* Plots, charts, heatmaps, feature visualizations, sample dataset images
+- **Lesion Characteristics:**  
+  Explored lesion locations and diagnosis confirmation methods (histopathology, follow-up, expert consensus, confocal microscopy).
+
+- **Class Imbalance:**  
+  Addressed the underrepresentation of skin cancers in darker skin tones using data augmentation, SMOTE, and HAM1000 pre-training.
+
+### Visualizations
+
+#### HAM1000 Dataset
+- **Age Distribution:**  
+  ![Age Distribution](images/Age Distribution.png)
+  
+- **Detailed Skin Tone Distribution:**  
+  ![Detailed Skin Tone Distribution](images/Detailed Skin Tone Distribution.png)
+  
+- **Diagnosis Confirmation:**  
+  ![Diagnosis Confirmation](images/Diagnosis Confirmation.png)
+  
+- **Diagnosis Count:**  
+  ![Diagnosis Count](images/Diagnosis Count.png)
+  
+- **Lesion Localization:**  
+  ![Lesion Localization](images/Lesion Localization.png)
+
+#### Given Dataset
+- **Sex Distribution:**  
+  ![Sex Distribution](images/Sex Distribution.png)
+  
+- **Skin Cancers Distribution:**  
+  ![Skin Cancers Distribution](images/Skin Cancers Distribution.png)
+  
+- **Skin Heatmap:**  
+  ![Skin Heatmap](images/Skin Heatmap.png)
+  
+- **Skin Tone Distribution:**  
+  ![Skin Tone Distribution](images/Skin Tone Distribution.png)
+
+### Challenges and Assumptions
+- **Class Imbalance:**  
+  Mitigated skewed lesion and skin tone distributions (fewer cancers on darker skin) using data augmentation, SMOTE, and HAM 1000 pre-training.
+- **Data Consistency:**  
+  Assumed uniform metadata across datasets for accurate diagnosis and confirmation mapping.
+- **Interpretability:**  
+  Improved clarity by renaming columns and converting codes to full descriptive labels.
 
 ---
 
