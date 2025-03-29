@@ -8,15 +8,19 @@
 
 | Alexia Ventura | @alexiaventura | Tested ResNet, contributed to README file |
 
+| Abdulaziz Khader | @aokhader | Researched data-upscaling, Trained ResNet101, contributed to README file |
+
+| Ava Gonick | (Fill in GitHub name) | (Top 3 tasks you completed) |
+
 ---
 
 ## **🎯 Project Highlights**
 
 **Example:**
 
-* Built a \[insert model type\] using \[techniques used\] to solve \[Kaggle competition task\]
+* Built a Visual Transformer by pretraining it on sample data to accurately detect skin cancers on different parts of the body for various skin types.
 * Achieved an F1 score of 0.64623 and a ranking of 12/75 on the final Kaggle Leaderboard
-* Implemented \[data preprocessing method\] to optimize results within compute constraints
+* Implemented a learning rate scheduler and weight decay to optimize results within compute constraints
 
 🔗 [Equitable AI for Dermatology | Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
 
@@ -32,6 +36,32 @@
 * How to access the dataset(s)
 * How to run the notebook or scripts
 
+To run the notebook, you have to either set it up on your local machine or use a cloud-based environment such as Google Colab.
+
+To run on a cloud-based environment:
+- Download the datasets and put them into your Google Drive account
+- Run the notebook on your environment
+
+To run on your local machine:
+- Clone the repository using your preferred method of cloning. For example, if you wanted to clone the repo using the the HTTPS link, run:
+  ```
+  git clone https://github.com/bettzv2/AJL-TEAM-2.git
+  ```
+- Once you clone the repo to your local machine, you have to add the HAM 1000 and AJL datasets to your Google Drive or local file system.
+  - If you chose to save the datasets on your local machine, change the dataset loading portion of the code to load the datasets from your local machine.
+  - To do so, change the code portion that mounts your Google drive account and loads the dataset into the following snippet (assuming the files are in the same directory as the program):
+  ```
+  import os
+
+  filepath = os.path.dirname(__file__)   # gets the directory of the current program
+  hamdataset = ""
+  ajldataset = ""
+
+  hampath = os.path.join(filepath, hamdataset)
+  ajlpath = os.path.join(filepath, ajldataset)
+  ```
+  - Now just change the paths when loading the dataset into *hampath* and *ajlpath*.
+
 ---
 
 ## **🏗️ Project Overview**
@@ -42,6 +72,7 @@
 * The objective of the challenge
 * The real-world significance of the problem and the potential impact of your work
 
+
 ---
 
 ## **📊 Data Exploration**
@@ -51,6 +82,8 @@
 * The dataset(s) used (i.e., the data provided in Kaggle \+ any additional sources)
 * Data exploration and preprocessing approaches
 * Challenges and assumptions when working with the dataset(s)
+
+We used the [HAM 1000](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000) dataset to pre-train the model on a smaller sample size and prepare the model for a more complex dataset. Then we used the given [AJL dataset](https://www.kaggle.com/competitions/bttai-ajl-2025/data) to train the model. We also used some data preparation techniques such as data augmentation and SMOTE to account for class imbalances. The biggest challenge that we faced was with the class imbalances: there were more skin cancers detected on lighter skin tones than on darker skin tones, so we had to use more than just SMOTE to fix that issue. That came in the form of pre-training the model with the smaller HAM 1000 dataset which has similar characteristics. 
 
 **Potential visualizations to include:**
 
@@ -65,6 +98,8 @@
 * Model(s) used (e.g., CNN with transfer learning, regression models)
 * Feature selection and Hyperparameter tuning strategies
 * Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
+
+
 
 ---
 
@@ -111,7 +146,7 @@ All images given in the dataset were used in the training, so no data in this da
 * What would you do differently with more time/resources?
 * What additional datasets or techniques would you explore?
 
-With ResNet in particular, the accuracy scores weren't as high as the ResNet value got larger, so it limited usage of that technique. Additionally, there were some issues with getting specific ResNet values to work based on importing the tools, which also limited which ResNet values could be used for testing. With more time and resources, we would have tried other data techniques to keep seeing if we could improve the accuracy score.
+With ResNet in particular, the accuracy scores weren't as high as the ResNet value got larger, so it limited usage of that technique. Additionally, there were some issues with getting specific ResNet values to work based on importing the tools, which also limited which ResNet values could be used for testing. With more time and resources, we would have tried other data techniques to keep seeing if we could improve the accuracy score, or used a combination of models as filters to get a better result.
 
 ---
 
