@@ -88,32 +88,32 @@ We conducted a concise analysis of key demographic and lesion attributes:
 
 #### HAM1000 Dataset
 - **Age Distribution:**  
-  ![Age Distribution](images/Age Distribution.png)
-  
+  <img src="https://github.com/bettzv2/AJL-TEAM-2/blob/main/images/Age%20Distribution.png" width="500" />
+
 - **Detailed Skin Tone Distribution:**  
-  ![Detailed Skin Tone Distribution](images/Detailed Skin Tone Distribution.png)
-  
+  <img src="https://github.com/bettzv2/AJL-TEAM-2/blob/main/images/Detailed%20Skin%20Tone%20Distribution.png" width="500" />
+
 - **Diagnosis Confirmation:**  
-  ![Diagnosis Confirmation](images/Diagnosis Confirmation.png)
-  
+  <img src="https://github.com/bettzv2/AJL-TEAM-2/blob/main/images/Diagnosis%20Confirmation.png" width="500" />
+
 - **Diagnosis Count:**  
-  ![Diagnosis Count](images/Diagnosis Count.png)
-  
+  <img src="https://github.com/bettzv2/AJL-TEAM-2/blob/main/images/Diagnosis%20Count.png" width="500" />
+
 - **Lesion Localization:**  
-  ![Lesion Localization](images/Lesion Localization.png)
+  <img src="https://github.com/bettzv2/AJL-TEAM-2/blob/main/images/Lesion%20Localization.png" width="500" />
+
+- **Sex Distribution:**  
+  <img src="https://github.com/bettzv2/AJL-TEAM-2/blob/main/images/Sex%20Distribution.png" width="500" />
 
 #### Given Dataset
-- **Sex Distribution:**  
-  ![Sex Distribution](images/Sex Distribution.png)
-  
 - **Skin Cancers Distribution:**  
-  ![Skin Cancers Distribution](images/Skin Cancers Distribution.png)
-  
+  <img src="https://github.com/bettzv2/AJL-TEAM-2/blob/main/images/Skin%20Cancers%20Distribution.png" width="500" />
+
 - **Skin Heatmap:**  
-  ![Skin Heatmap](images/Skin Heatmap.png)
-  
+  <img src="https://github.com/bettzv2/AJL-TEAM-2/blob/main/images/Skin%20Cancers%20Distribution.png" width="500" />
+
 - **Skin Tone Distribution:**  
-  ![Skin Tone Distribution](images/Skin Tone Distribution.png)
+  <img src="https://github.com/bettzv2/AJL-TEAM-2/blob/main/images/Skin%20Tone%20Distribution.png" width="500" />
 
 ### Challenges and Assumptions
 - **Class Imbalance:**  
