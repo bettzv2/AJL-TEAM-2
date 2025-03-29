@@ -12,6 +12,8 @@
 
 | Ava Gonick | (Fill in GitHub name) | (Top 3 tasks you completed) |
 
+| Chris Taguba | (Fill in GitHub name) | (Top 3 tasks you completed) |
+
 ---
 
 ## **🎯 Project Highlights**
