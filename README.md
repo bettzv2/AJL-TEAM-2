@@ -18,8 +18,6 @@
 
 ## **🎯 Project Highlights**
 
-**Example:**
-
 * Built a Visual Transformer by pretraining it on sample data to accurately detect skin cancers on different parts of the body for various skin types.
 * Achieved an F1 score of 0.64623 and a ranking of 12/75 on the final Kaggle Leaderboard
 * Implemented a learning rate scheduler and weight decay to optimize results within compute constraints
@@ -30,21 +28,13 @@
 
 ## **👩🏽‍💻 Setup & Execution**
 
-**Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
+**To run the notebook, you have to either set it up on your local machine or use a cloud-based environment such as Google Colab.**
 
-* How to clone the repository
-* How to install dependencies
-* How to set up the environment
-* How to access the dataset(s)
-* How to run the notebook or scripts
-
-To run the notebook, you have to either set it up on your local machine or use a cloud-based environment such as Google Colab.
-
-To run on a cloud-based environment:
+### To run on a cloud-based environment:
 - Download the datasets and put them into your Google Drive account
 - Run the notebook on your environment
 
-To run on your local machine:
+### To run on your local machine:
 - Clone the repository using your preferred method of cloning. For example, if you wanted to clone the repo using the the HTTPS link, run:
   ```
   git clone https://github.com/bettzv2/AJL-TEAM-2.git
