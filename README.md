@@ -40,13 +40,15 @@ To run the notebook, you have to either set it up on your local machine or use a
 
 To run on a cloud-based environment:
 - Download the datasets and put them into your Google Drive account
+- Run the notebook on your environment
 
 To run on your local machine:
 - Clone the repository using your preferred method of cloning. For example, if you wanted to clone the repo using the the HTTPS link, run:
   ```
   git clone https://github.com/bettzv2/AJL-TEAM-2.git
   ```
-- Once you clone the repo to your local machine, you have to add the HAM 1000 and AJL datasets to your file system.
+- Once you clone the repo to your local machine, you have to add the HAM 1000 and AJL datasets to your Google Drive or local file system.
+- - If you chose to save the datasets on your local machine, change the dataset loading portion of the code to load the datasets from your local machine.
 - After that, 
 
 ---
