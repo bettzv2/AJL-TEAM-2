@@ -10,31 +10,22 @@
 
 | Abdulaziz Khader | @aokhader | Researched data-upscaling, Trained ResNet101, contributed to README file |
 
-| Ava Gonick | (Fill in GitHub name) | (Top 3 tasks you completed) |
+| Ava Gonick | @avagonick | researched pretraining datasets, performed data augmentation, trained ResNet50, trained Vit16, contributed to README file |
 
 ---
 
 ## **🎯 Project Highlights**
 
-**Example:**
-
-* Built a Visual Transformer by pretraining it on sample data to accurately detect skin cancers on different parts of the body for various skin types.
+* Built a Visual Transformer by training the pretrained ViT16 model on the HAM1000 dataset and then fine-tuning on sample data to accurately detect skin cancers on different parts of the body for various skin types.
 * Achieved an F1 score of 0.64623 and a ranking of 12/75 on the final Kaggle Leaderboard
 * Implemented a learning rate scheduler and weight decay to optimize results within compute constraints
 
 🔗 [Equitable AI for Dermatology | Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
+🔗 [HAM1000 page](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000)
 
 ---
 
 ## **👩🏽‍💻 Setup & Execution**
-
-**Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
-
-* How to clone the repository
-* How to install dependencies
-* How to set up the environment
-* How to access the dataset(s)
-* How to run the notebook or scripts
 
 To run the notebook, you have to either set it up on your local machine or use a cloud-based environment such as Google Colab.
 
@@ -66,12 +57,6 @@ To run on your local machine:
 
 ## **🏗️ Project Overview**
 
-**Describe:**
-
-* The Kaggle competition and its connection to the Break Through Tech AI Program
-* The objective of the challenge
-* The real-world significance of the problem and the potential impact of your work
-
 The Kaggle competition aimed to challenge us to solve real-world problems using machine learing. Specifically, it aimed at potentially solving the problem of being unable to diagnose darker-colored skin tones with skin cancer, which is a complex problem in the medical field. The Break Through Tech AI Program prepared us to face this challenge with all the necessary information we need to create an accurate and unbiased model. With the right model, we can potentially help doctors around the world with diagnosing skin cancers and speed up the treatment process, therefore decreasing the number of cancer-related sickness and deaths.
 
 ---
@@ -94,11 +79,20 @@ We used the [HAM 1000](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-
 
 ## **🧠 Model Development**
 
-**Describe (as applicable):**
+Two different model approaches were used. One used a pretrained ResNet, and the other used a pretrained ViT16. 
 
-* Model(s) used (e.g., CNN with transfer learning, regression models)
-* Feature selection and Hyperparameter tuning strategies
-* Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
+### ResNet
+We first started by developing a model based on a pretrained ResNet. We first began by fine-tuning just the last linear layer in a resNet18, resNet50, and resNet101. Out of these three, the resNet50 performed the best, so we decided to further optimize the resNet50. For this resNet50, we first pretrained layers 3 and 4 of the model on the HAM1000 dataset for 10 epochs. We then trained layer 4 of the model on the AJL dataset, using 80% of the dataset for training and 20% of the dataset for testing for 20 epochs. For this we used a learning rate of 1e^-4, a reduce on plateau learning rate scheduler with a patience of 2. As our optimizer, we used Adam, and for our Loss function, we used Cross Entropy Loss. For evaluation metrics, we used Validation accuracy and Validation f1 score. This resulted in a validation accuracy of 0.4783 and a validation F1 score of 0.4705. 
+
+** Optimizing the ResNet50 **
+To achieve this accuracy for the ResNet50 we did some optimizations. First, we found that pretraining on the HAM1000 dataset, a dataset with images of skin lesions as well as labels, performed better than just training on the AJL dataset. We also experimented with the number of layers within the ResNet50 that we pretrained.
+
+
+### Vit16
+We then developed a model based on the ViT16. We started with a similar approach to the resNet50, where we pretrained the last half of the model on the HAM1000 dataset for 10 epochs, then trained the last two layers on the AJL dataset for 20 epochs. The AJL dataset was split into 80% training data and 20% validation data. For this we used a learning rate of 1e^-4, a reduce on plateau learning rate scheduler with a patience of 2. This model performed much better than the ResNet50 we had made, with a validation accuracy of 0.57 compared to a validation accuracy of 0.47 with the ResNet50. We then optimized this model. The final model we developed involved pretraining the entire ViT16 on the HAM10000 dataset and then fine-tuning the last 8 layers of the model on the AJL dataset. For the AJL dataset we used data augmentation. In particular, we used random crops of size 224, random horizontal flips, color jitter (which slightly changed the brightness, contrast, saturation, and hue of the data), random rotations up to 20 degrees, slight Gaussian blur, and slight elastic transformations. We used an Adam optimizer with an initial learning rate of 1e^-4 as well as weight decay of 5e^-5. We also used a reduce on plateau learning rate scheduler with a patience of 3 and a minimum learning rate of 1e^-7. This model gave us a validation accuracy of 0.6416 and a validation F1 score of 0.5841. On the private kaggle leaderboard it gave us an F1 score of 0.64623. 
+
+** Optimizing the ViT16 **
+To optimize the ViT16, we tested with many different hyperparameters. We tried different learning rate schedulers, comparing the cosine annealing scheduler to the reduce on plate,u finding that the reduce on plateau scheduler did better. We tested with different amounts of weight decay as the model seemed to be initially overfitting. For this, we tried no weight decay and values of 1e^-4, 5e^-5, and 1e^-,5 finding that 5e^-5 did the best. Less resulted in more overfitting but more resulted in too much underfitting. We also tested around with the amount of the model that was trained on the AJL dataset. We tested training all the layers, the last 8, 6, 4, and 2 layers. We found that training on the last 8 layers did better with training on all of the layers, resulting in some overfitting, and training on fewer layers resulted in some underfitting. We also tested different amounts of data augmentation. We found that if we added in too much data augmentation, particularly adding too much color jitter made the model do worse. However, we also found that doing no data augmentation made the model do worse. 
 
 
 
@@ -130,7 +124,7 @@ As you answer the questions below, consider using not only text, but also illust
 Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi6TlPviC3q/view) from the Algorithmic Justice League for inspiration!
 
 1. What steps did you take to address [model fairness](https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf)? (e.g., leveraging data augmentation techniques to account for training dataset imbalances; using a validation set to assess model performance across different skin tones)
-   - Balanced the Dataset – We used data augmentation techniques (such as rotation, flipping, and color normalization) to increase representation for underrepresented skin tones using SMOTE. We also used more data to train the model on identifying skin cancers regardless of the type, which allowed the model to identify more possible skin cancers.
+   - Balanced the Dataset – We used data augmentation techniques (such as rotation, flipping, and color normalization) to increase representation for underrepresented skin tones. We also used more data to train the model on identifying skin cancers regardless of the type, which allowed the model to identify more possible skin cancers.
 3. What broader impact could your work have?
    - Improved Healthcare Accessibility – By ensuring diverse representation, the model can help dermatologists provide more accurate diagnoses across all skin tones.
    - The model can have a larger impact by also being trained for more skin conditions than just what was in this dataset, such as exxtremely rare skin conditions or skin conditions that look very similar to each other and need further diagnosis from other factors.
