@@ -72,7 +72,7 @@ To run on your local machine:
 * The objective of the challenge
 * The real-world significance of the problem and the potential impact of your work
 
-The Kaggle competition aimed to challenge us to solve real-world problems using machine learing.
+The Kaggle competition aimed to challenge us to solve real-world problems using machine learing. Specifically, it aimed at potentially solving the problem of being unable to diagnose darker-colored skin tones with skin cancer, which is a complex problem in the medical field. The Break Through Tech AI Program prepared us to face this challenge with all the necessary information we need to create an accurate and unbiased model. With the right model, we can potentially help doctors around the world with diagnosing skin cancers and speed up the treatment process, therefore decreasing the number of cancer-related sickness and deaths.
 
 ---
 
