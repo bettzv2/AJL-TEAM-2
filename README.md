@@ -49,6 +49,18 @@ To run on your local machine:
   ```
 - Once you clone the repo to your local machine, you have to add the HAM 1000 and AJL datasets to your Google Drive or local file system.
   - If you chose to save the datasets on your local machine, change the dataset loading portion of the code to load the datasets from your local machine.
+  - To do so, change the code portion that mounts your Google drive account and loads the dataset into the following snippet (assuming the files are in the same directory as the program):
+  ```
+  import os
+
+  filepath = os.path.dirname(__file__)   # gets the directory of the current program
+  hamdataset = ""
+  ajldataset = ""
+
+  hampath = os.path.join(filepath, hamdataset)
+  ajlpath = os.path.join(filepath, ajldataset)
+
+  ```
 - After that, 
 
 ---
