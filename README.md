@@ -48,7 +48,7 @@ To run on your local machine:
   git clone https://github.com/bettzv2/AJL-TEAM-2.git
   ```
 - Once you clone the repo to your local machine, you have to add the HAM 1000 and AJL datasets to your Google Drive or local file system.
-- - If you chose to save the datasets on your local machine, change the dataset loading portion of the code to load the datasets from your local machine.
+  - If you chose to save the datasets on your local machine, change the dataset loading portion of the code to load the datasets from your local machine.
 - After that, 
 
 ---
