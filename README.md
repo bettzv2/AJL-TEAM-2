@@ -72,6 +72,7 @@ To run on your local machine:
 * The objective of the challenge
 * The real-world significance of the problem and the potential impact of your work
 
+The Kaggle competition aimed to challenge us to solve real-world problems using machine learing. Specifically, it aimed at potentially solving the problem of being unable to diagnose darker-colored skin tones with skin cancer, which is a complex problem in the medical field. The Break Through Tech AI Program prepared us to face this challenge with all the necessary information we need to create an accurate and unbiased model. With the right model, we can potentially help doctors around the world with diagnosing skin cancers and speed up the treatment process, therefore decreasing the number of cancer-related sickness and deaths.
 
 ---
 
@@ -129,12 +130,10 @@ As you answer the questions below, consider using not only text, but also illust
 Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi6TlPviC3q/view) from the Algorithmic Justice League for inspiration!
 
 1. What steps did you take to address [model fairness](https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf)? (e.g., leveraging data augmentation techniques to account for training dataset imbalances; using a validation set to assess model performance across different skin tones)
-   - Balanced the Dataset – We used data augmentation techniques (such as rotation, flipping, and color normalization) to increase representation for underrepresented skin tones.
+   - Balanced the Dataset – We used data augmentation techniques (such as rotation, flipping, and color normalization) to increase representation for underrepresented skin tones using SMOTE. We also used more data to train the model on identifying skin cancers regardless of the type, which allowed the model to identify more possible skin cancers.
 3. What broader impact could your work have?
    - Improved Healthcare Accessibility – By ensuring diverse representation, the model can help dermatologists provide more accurate diagnoses across all skin tones.
-   - 
-
-All images given in the dataset were used in the training, so no data in this dataset was excluded based on skin condition, skin color, and other factors. Techniques such as data augmentation and SMOTE were also used to account for imbalances. This work can have a broader impact by also being trained for more skin conditions than just what was in this dataset, such as exxtremely rare skin conditions or skin conditions that look very similar to each other and need further diagnosis from other factors.
+   - The model can have a larger impact by also being trained for more skin conditions than just what was in this dataset, such as exxtremely rare skin conditions or skin conditions that look very similar to each other and need further diagnosis from other factors.
 
 ---
 
