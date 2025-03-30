@@ -8,11 +8,11 @@
 
 | Alexia Ventura | @alexiaventura | Tested ResNet, contributed to README file |
 
-| Abdulaziz Khader | @aokhader | Researched data-upscaling, Trained ResNet101, contributed to README file |
+| Abdulaziz Khader | @aokhader | Researched data-upscaling, trained ResNet101, contributed to README file |
 
-| Ava Gonick | @avagonick | researched pretraining datasets, performed data augmentation, trained ResNet50, trained Vit16, contributed to README file |
+| Ava Gonick | @avagonick | Researched and performed data preparation, trained ResNet50 and ViT16, contributed to README file |
 
-| Chris Taguba | @ectaguba | Researched models and dataset balancing, conducted data exploration, began training ViT, contributed to README file |
+| Chris Taguba | @ectaguba | Researched models and dataset balancing, conducted data exploration, contributed to README file |
 
 ---
 
