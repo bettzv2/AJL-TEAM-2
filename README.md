@@ -132,7 +132,8 @@ Two different model approaches were used. One used a pretrained ResNet, and the 
 ### ResNet
 We first started by developing a model based on a pretrained ResNet. We first began by fine-tuning just the last linear layer in a resNet18, resNet50, and resNet101. Out of these three, the resNet50 performed the best, so we decided to further optimize the resNet50. For this resNet50, we first pretrained layers 3 and 4 of the model on the HAM1000 dataset for 10 epochs. We then trained layer 4 of the model on the AJL dataset, using 80% of the dataset for training and 20% of the dataset for testing for 20 epochs. For this we used a learning rate of 1e^-4, a reduce on plateau learning rate scheduler with a patience of 2. As our optimizer, we used Adam, and for our Loss function, we used Cross Entropy Loss. For evaluation metrics, we used Validation accuracy and Validation f1 score. This resulted in a validation accuracy of 0.4783 and a validation F1 score of 0.4705. 
 
-** Optimizing the ResNet50 **
+**Optimizing the ResNet50**
+
 To achieve this accuracy for the ResNet50 we did some optimizations. First, we found that pretraining on the HAM1000 dataset, a dataset with images of skin lesions as well as labels, performed better than just training on the AJL dataset. We also experimented with the number of layers within the ResNet50 that we pretrained.
 
 
@@ -155,6 +156,8 @@ To optimize the ViT16, we tested with many different hyperparameters. We tried d
 * How your model performed overall
 * How your model performed across different skin tones (AJL)
 * Insights from evaluating model fairness (AJL)
+
+With our final model, we ended up with an F1 score 0.64623 and a ranking of 12/75 on the Kaggle leaderboard. 
 
 **Potential visualizations to include:**
 
