@@ -1,5 +1,5 @@
 
-# GitHub Kaggle Project AJL-TEAM-2
+# AJL-TEAM-2 Skin Disease Detector
 
 
 
