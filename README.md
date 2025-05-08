@@ -1,5 +1,5 @@
 
-# AJL-TEAM-2 Skin Disease Detector
+# AJL-TEAM-2 Skin Disorder Detector
 
 
 
